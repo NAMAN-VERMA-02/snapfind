@@ -12,9 +12,25 @@ RRF_K = 60  # the standard RRF constant; fixed, never tuned on the eval set
 HL = ("\x02", "\x03")  # highlight markers in snippets; the CLI and web UI turn them into styling
 
 
+# NLTK's English stopword list, minus "no", "not" and "won" (they can matter in a screenshot).
+# With OR-ed terms, words like "when", "my", "the" match nearly every image, and that noise
+# pushed the semantic hit out of the hybrid top 3 on paraphrase queries.
+STOPWORDS = frozenset("""
+i me my myself we our ours ourselves you your yours yourself yourselves he him his himself she
+her hers herself it its itself they them their theirs themselves what which who whom this that
+these those am is are was were be been being have has had having do does did doing a an the
+and but if or because as until while of at by for with about against between into through
+during before after above below to from up down in out on off over under again further then
+once here there when where why how all any both each few more most other some such nor only
+own same so than too very s t can will just don should now d ll m o re ve y ain aren couldn
+didn doesn hadn hasn haven isn ma mightn mustn needn shan shouldn wasn weren wouldn
+""".split())
+
+
 def fts_query(q: str) -> str:
-    """Any user text -> a safe FTS5 query: every word quoted, joined with OR."""
-    terms = expand_terms(re.findall(r"\w+", q.lower()))
+    """Any user text -> a safe FTS5 query: every non-stopword quoted, joined with OR."""
+    words = re.findall(r"\w+", q.lower())
+    terms = expand_terms([w for w in words if w not in STOPWORDS] or words)
     return " OR ".join(f'"{t}"' for t in terms)
 
 
