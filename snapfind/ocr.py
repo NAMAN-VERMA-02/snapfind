@@ -12,7 +12,9 @@ def _get():
     if _engine is None:
         from rapidocr import RapidOCR
 
-        _engine = RapidOCR(params={"Global.log_level": "error"})
+        # Screenshots are upright, so the text-angle classifier only costs time
+        # (eval/bench_ocr.py: about 14% faster, same word recall on the eval images).
+        _engine = RapidOCR(params={"Global.log_level": "error", "Global.use_cls": False})
     return _engine
 
 
