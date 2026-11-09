@@ -94,8 +94,13 @@ def main() -> None:
     load_s = time.perf_counter() - t
 
     images = HERE / "images"
-    first = indexer.update(con, [images])
-    again = indexer.update(con, [images])  # nothing changed: shows what the cache saves
+    def timed_update():  # wall time including the folder scan, not just the OCR loop
+        t = time.perf_counter()
+        r = indexer.update(con, [images])
+        return r, time.perf_counter() - t
+
+    first, first_s = timed_update()
+    again, again_s = timed_update()  # nothing changed: shows what the cache saves
     total = con.execute("SELECT count(*) FROM images").fetchone()[0]
 
     cases = [json.loads(line) for line in (HERE / "cases.jsonl").read_text("utf-8").splitlines()
@@ -124,9 +129,9 @@ def main() -> None:
         "corpus": {"eval_images": first["indexed"], "distractor_images": base_count,
                    "total_indexed": total},
         "speed": {"model_load_s": round(load_s, 2),
-                  "first_index_s": round(first["seconds"], 2),
-                  "images_per_s": round(first["indexed"] / first["seconds"], 3),
-                  "cached_reindex_s": round(again["seconds"], 3),
+                  "first_index_s": round(first_s, 2),
+                  "images_per_s": round(first["indexed"] / first_s, 3),
+                  "cached_reindex_ms": round(again_s * 1000, 1),
                   "search_ms_p50": round(statistics.median(latencies), 1)},
         "buckets": {
             "all": summarize(rows, lambda r: True),

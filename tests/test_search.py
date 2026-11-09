@@ -26,6 +26,20 @@ def test_hostile_queries_do_not_crash(con, q):
         search.search(con, q, mode=mode)
 
 
+def test_stopwords_are_dropped_from_keyword_query():
+    assert search.fts_query("when do I see the doctor") == '"see" OR "doctor"'
+    assert search.fts_query("the who") == '"the" OR "who"'  # nothing left: keep the words
+    assert search.fts_query("we won") == '"won"'
+
+
+def test_sharing_only_common_words_is_not_a_keyword_hit(con):
+    # Regression: OR-ed stopwords matched nearly every image, and in the hybrid fusion that
+    # noise pushed the right (semantic) hit out of the top 3 on paraphrase queries.
+    fill(con)
+    assert search.keyword(con, "when do I see the doctor") == []
+    assert search.keyword(con, "what is in the ticket for my train") != []
+
+
 def test_rrf_rewards_agreement():
     assert search.rrf([1, 2, 3], [2, 9, 8])[:2] == [2, 1]  # in both lists beats first in one
     assert search.rrf([], [5, 6]) == [5, 6]
