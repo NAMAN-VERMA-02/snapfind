@@ -1,0 +1,100 @@
+{"id": "c01", "file": "c01.png", "query": "restaurant reservation for four people", "kind": "paraphrase", "hard": null}
+{"id": "c02", "file": "c02.png", "query": "wing b wifi password", "kind": "exact", "hard": null}
+{"id": "c03", "file": "c03.png", "query": "papa sent 5000 for books", "kind": "exact", "hard": null}
+{"id": "c04", "file": "c04.png", "query": "when is the practical file due", "kind": "paraphrase", "hard": null}
+{"id": "c05", "file": "c05.png", "query": "how much is my monthly rent and when is it due", "kind": "paraphrase", "hard": null}
+{"id": "c06", "file": "c06.png", "query": "green valley apartments address", "kind": "exact", "hard": null}
+{"id": "c07", "file": "c07.jpg", "query": "last date to sign up for the coding competition", "kind": "paraphrase", "hard": "jpeg"}
+{"id": "c08", "file": "c08.png", "query": "login for the shared streaming account", "kind": "paraphrase", "hard": null}
+{"id": "c09", "file": "c09.png", "query": "carry warm jackets manali", "kind": "exact", "hard": "tall"}
+{"id": "c10", "file": "c10.png", "query": "when do I see the doctor", "kind": "paraphrase", "hard": null}
+{"id": "e01", "file": "e01.png", "query": "internship offer letter stipend", "kind": "exact", "hard": null}
+{"id": "e02", "file": "e02.png", "query": "cloudnest free trial ends", "kind": "exact", "hard": null}
+{"id": "e03", "file": "e03.png", "query": "when are my final exams", "kind": "paraphrase", "hard": null}
+{"id": "e04", "file": "e04.png", "query": "reset password link expires", "kind": "exact", "hard": "small"}
+{"id": "e05", "file": "e05.png", "query": "my flight to bangalore before new year", "kind": "paraphrase", "hard": null}
+{"id": "e06", "file": "e06.png", "query": "penalty for returning the OS textbook late", "kind": "paraphrase", "hard": null}
+{"id": "e07", "file": "e07.png", "query": "byte bandits 2nd place codesprint", "kind": "exact", "hard": null}
+{"id": "e08", "file": "e08.png", "query": "scholarship documents pending income certificate", "kind": "exact", "hard": null}
+{"id": "x10", "file": "x10.png", "query": "why we picked postgres over mongo", "kind": "paraphrase", "hard": "blur"}
+{"id": "k01", "file": "k01.png", "query": "train ticket december", "kind": "exact", "hard": null}
+{"id": "k02", "file": "k02.png", "query": "pune to mumbai bus booking", "kind": "exact", "hard": null}
+{"id": "k03", "file": "k03.png", "query": "which gate for my flight to bengaluru", "kind": "paraphrase", "hard": null}
+{"id": "k04", "file": "k04.png", "query": "added money to my metro card", "kind": "paraphrase", "hard": null}
+{"id": "k05", "file": "k05.png", "query": "cab to airport terminal 2 otp", "kind": "exact", "hard": "lowc"}
+{"id": "k06", "file": "k06.png", "query": "snow crest cottage manali booking", "kind": "exact", "hard": null}
+{"id": "k07", "file": "k07.jpg", "query": "movie tickets for saturday night", "kind": "paraphrase", "hard": "jpeg"}
+{"id": "k08", "file": "k08.png", "query": "parking slot 117", "kind": "exact", "hard": null}
+{"id": "u01", "file": "u01.png", "query": "money I sent to riya", "kind": "paraphrase", "hard": null}
+{"id": "u02", "file": "u02.png", "query": "paid rent 9500", "kind": "exact", "hard": null}
+{"id": "u03", "file": "u03.png", "query": "electricity bill payment didn't go through", "kind": "paraphrase", "hard": null}
+{"id": "u04", "file": "u04.png", "query": "payquick received 5000 papa", "kind": "exact", "hard": null}
+{"id": "u05", "file": "u05.png", "query": "airwave recharge 299", "kind": "exact", "hard": null}
+{"id": "u06", "file": "u06.png", "query": "proof that I paid my college fees", "kind": "paraphrase", "hard": null}
+{"id": "u07", "file": "u07.png", "query": "splitease how much I owe aman", "kind": "exact", "hard": null}
+{"id": "o01", "file": "o01.png", "query": "when did my earphones arrive", "kind": "paraphrase", "hard": null}
+{"id": "o02", "file": "o02.png", "query": "what did I order for dinner from the food app", "kind": "paraphrase", "hard": "blur"}
+{"id": "o03", "file": "o03.png", "query": "return pickup running shoes refund", "kind": "exact", "hard": null}
+{"id": "o04", "file": "o04.png", "query": "freshcart milk eggs bread", "kind": "exact", "hard": null}
+{"id": "o05", "file": "o05.png", "query": "laptop monthly installment", "kind": "paraphrase", "hard": null}
+{"id": "o06", "file": "o06.png", "query": "air conditioner warranty till 2028", "kind": "exact", "hard": "small"}
+{"id": "o07", "file": "o07.png", "query": "medicine order for fever and allergy", "kind": "paraphrase", "hard": null}
+{"id": "t01", "file": "t01.png", "query": "EADDRINUSE address already in use", "kind": "exact", "hard": null}
+{"id": "t02", "file": "t02.png", "query": "git push rejected non-fast-forward", "kind": "exact", "hard": null}
+{"id": "t03", "file": "t03.png", "query": "opencv import error in python", "kind": "paraphrase", "hard": null}
+{"id": "t04", "file": "t04.png", "query": "pip install failed because a c++ compiler is missing", "kind": "paraphrase", "hard": "lowc"}
+{"id": "t05", "file": "t05.png", "query": "cannot connect to the docker daemon", "kind": "exact", "hard": null}
+{"id": "t06", "file": "t06.png", "query": "java crashed because a variable was null", "kind": "paraphrase", "hard": null}
+{"id": "t07", "file": "t07.png", "query": "ssh permission denied publickey", "kind": "exact", "hard": null}
+{"id": "t08", "file": "t08.jpg", "query": "segmentation fault core dumped", "kind": "exact", "hard": "jpeg"}
+{"id": "x06", "file": "x06.png", "query": "kubernetes pod keeps restarting", "kind": "paraphrase", "hard": null}
+{"id": "d01", "file": "d01.png", "query": "binary search python", "kind": "exact", "hard": null}
+{"id": "d02", "file": "d02.png", "query": "sql query for average marks per student", "kind": "paraphrase", "hard": null}
+{"id": "d03", "file": "d03.png", "query": "react fetch cancel when component unmounts", "kind": "paraphrase", "hard": null}
+{"id": "d04", "file": "d04.png", "query": "shortest path code with a heap", "kind": "paraphrase", "hard": "small"}
+{"id": "d05", "file": "d05.png", "query": "database url jwt secret env", "kind": "exact", "hard": null}
+{"id": "x07", "file": "x07.png", "query": "email regex javascript", "kind": "exact", "hard": null}
+{"id": "s01", "file": "s01.png", "query": "campus wifi ip address", "kind": "exact", "hard": null}
+{"id": "s02", "file": "s02.png", "query": "screen size and zoom settings", "kind": "paraphrase", "hard": "blur"}
+{"id": "s03", "file": "s03.png", "query": "how much memory does my laptop have", "kind": "paraphrase", "hard": null}
+{"id": "s04", "file": "s04.png", "query": "bluetooth headphones battery", "kind": "exact", "hard": null}
+{"id": "s05", "file": "s05.png", "query": "which apps can use my camera and mic", "kind": "paraphrase", "hard": null}
+{"id": "p01", "file": "p01.png", "query": "placement drive 14 companies", "kind": "exact", "hard": null}
+{"id": "p02", "file": "p02.png", "query": "git stash -p tip", "kind": "exact", "hard": null}
+{"id": "p03", "file": "p03.jpg", "query": "complaint about a late train", "kind": "paraphrase", "hard": "jpeg"}
+{"id": "p04", "file": "p04.png", "query": "free hosting money for college kids", "kind": "paraphrase", "hard": null}
+{"id": "p05", "file": "p05.png", "query": "funny post about programs running without bugs", "kind": "paraphrase", "hard": null}
+{"id": "p06", "file": "p06.png", "query": "lost black wallet library", "kind": "exact", "hard": null}
+{"id": "n01", "file": "n01.png", "query": "shopping list for the kitchen", "kind": "paraphrase", "hard": null}
+{"id": "n02", "file": "n02.png", "query": "study schedule for coding interviews", "kind": "paraphrase", "hard": null}
+{"id": "n03", "file": "n03.png", "query": "gift ideas didi birthday", "kind": "exact", "hard": null}
+{"id": "n04", "file": "n04.png", "query": "database oral exam prep", "kind": "paraphrase", "hard": "tall"}
+{"id": "n05", "file": "n05.png", "query": "router admin page 192.168.0.1", "kind": "exact", "hard": null}
+{"id": "n06", "file": "n06.png", "query": "movies to watch list", "kind": "exact", "hard": null}
+{"id": "a01", "file": "a01.png", "query": "meeting with my professor about the project in december", "kind": "paraphrase", "hard": null}
+{"id": "a02", "file": "a02.png", "query": "teeth checkup appointment", "kind": "paraphrase", "hard": null}
+{"id": "a03", "file": "a03.png", "query": "mock interview system design", "kind": "exact", "hard": null}
+{"id": "a04", "file": "a04.png", "query": "mom's birthday dinner plan", "kind": "paraphrase", "hard": "lowc"}
+{"id": "a05", "file": "a05.png", "query": "sprint planning monday", "kind": "exact", "hard": null}
+{"id": "m01", "file": "m01.png", "query": "payquick otp", "kind": "exact", "hard": null}
+{"id": "m02", "file": "m02.png", "query": "bank message about money spent on the train booking", "kind": "paraphrase", "hard": null}
+{"id": "m03", "file": "m03.png", "query": "address change request for my government id", "kind": "paraphrase", "hard": "small"}
+{"id": "m04", "file": "m04.png", "query": "power bill due date", "kind": "paraphrase", "hard": null}
+{"id": "m05", "file": "m05.png", "query": "parcel out for delivery agent vikas", "kind": "exact", "hard": null}
+{"id": "x09", "file": "x09.png", "query": "is my train seat confirmed", "kind": "paraphrase", "hard": null}
+{"id": "h01", "file": "h01.png", "query": "monthly budget november", "kind": "exact", "hard": null}
+{"id": "h02", "file": "h02.png", "query": "attendance below 75%", "kind": "exact", "hard": "tall"}
+{"id": "h03", "file": "h03.png", "query": "who paid for what on the mountain trip", "kind": "paraphrase", "hard": null}
+{"id": "h04", "file": "h04.png", "query": "where did I apply for internships", "kind": "paraphrase", "hard": null}
+{"id": "h05", "file": "h05.png", "query": "gym log bench press", "kind": "exact", "hard": null}
+{"id": "r01", "file": "r01.png", "query": "how to free a port that is busy", "kind": "paraphrase", "hard": null}
+{"id": "r02", "file": "r02.png", "query": "placement eligibility cgpa backlogs", "kind": "exact", "hard": null}
+{"id": "r03", "file": "r03.png", "query": "python -m venv activate", "kind": "exact", "hard": "tall"}
+{"id": "r04", "file": "r04.png", "query": "what time do I have to be back in the hostel", "kind": "paraphrase", "hard": "blur"}
+{"id": "r05", "file": "r05.png", "query": "masala chai recipe", "kind": "exact", "hard": null}
+{"id": "x08", "file": "x08.png", "query": "college bus timings from sector 62", "kind": "paraphrase", "hard": null}
+{"id": "x01", "file": "x01.png", "query": "my room for the end sem exam", "kind": "paraphrase", "hard": null}
+{"id": "x02", "file": "x02.png", "query": "sgpa 8.42 result", "kind": "exact", "hard": null}
+{"id": "x03", "file": "x03.png", "query": "noida fog aqi", "kind": "exact", "hard": null}
+{"id": "x04", "file": "x04.png", "query": "when does my gym plan end", "kind": "paraphrase", "hard": null}
+{"id": "x05", "file": "x05.png", "query": "cafe wifi password", "kind": "exact", "hard": null}

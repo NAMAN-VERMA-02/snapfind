@@ -1,0 +1,1037 @@
+{
+  "date": "2026-11-10",
+  "snapfind": "0.1.0",
+  "commit": "307dd17",
+  "cpu": "12th Gen Intel(R) Core(TM) i3-1215U",
+  "threads": 8,
+  "python": "3.12.10",
+  "os": "Windows-11",
+  "corpus": {
+    "eval_images": 200,
+    "distractor_images": 0,
+    "total_indexed": 200
+  },
+  "speed": {
+    "model_load_s": 5.98,
+    "first_index_s": 2026.03,
+    "images_per_s": 0.099,
+    "cached_reindex_s": 0.0,
+    "search_ms_p50": 1.9
+  },
+  "buckets": {
+    "all": {
+      "n": 100,
+      "keyword": {
+        "top1": 62,
+        "top3": 71,
+        "top3_ci95": [
+          0.615,
+          0.79
+        ]
+      },
+      "semantic": {
+        "top1": 75,
+        "top3": 95,
+        "top3_ci95": [
+          0.888,
+          0.978
+        ]
+      },
+      "hybrid": {
+        "top1": 69,
+        "top3": 87,
+        "top3_ci95": [
+          0.79,
+          0.922
+        ]
+      }
+    },
+    "exact": {
+      "n": 50,
+      "keyword": {
+        "top1": 47,
+        "top3": 48,
+        "top3_ci95": [
+          0.865,
+          0.989
+        ]
+      },
+      "semantic": {
+        "top1": 41,
+        "top3": 49,
+        "top3_ci95": [
+          0.895,
+          0.996
+        ]
+      },
+      "hybrid": {
+        "top1": 48,
+        "top3": 49,
+        "top3_ci95": [
+          0.895,
+          0.996
+        ]
+      }
+    },
+    "paraphrase": {
+      "n": 50,
+      "keyword": {
+        "top1": 15,
+        "top3": 23,
+        "top3_ci95": [
+          0.33,
+          0.596
+        ]
+      },
+      "semantic": {
+        "top1": 34,
+        "top3": 46,
+        "top3_ci95": [
+          0.812,
+          0.968
+        ]
+      },
+      "hybrid": {
+        "top1": 21,
+        "top3": 38,
+        "top3_ci95": [
+          0.626,
+          0.857
+        ]
+      }
+    },
+    "hard_images": {
+      "n": 19,
+      "keyword": {
+        "top1": 11,
+        "top3": 12,
+        "top3_ci95": [
+          0.41,
+          0.809
+        ]
+      },
+      "semantic": {
+        "top1": 14,
+        "top3": 18,
+        "top3_ci95": [
+          0.754,
+          0.991
+        ]
+      },
+      "hybrid": {
+        "top1": 12,
+        "top3": 14,
+        "top3_ci95": [
+          0.512,
+          0.882
+        ]
+      }
+    }
+  },
+  "hybrid_vs_keyword_top3": {
+    "fixed": 16,
+    "broken": 0
+  },
+  "queries": [
+    {
+      "id": "c01",
+      "query": "restaurant reservation for four people",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "c02",
+      "query": "wing b wifi password",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "c03",
+      "query": "papa sent 5000 for books",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 3,
+      "hybrid": 1
+    },
+    {
+      "id": "c04",
+      "query": "when is the practical file due",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": null,
+      "hybrid": null
+    },
+    {
+      "id": "c05",
+      "query": "how much is my monthly rent and when is it due",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 5,
+      "semantic": 1,
+      "hybrid": 2
+    },
+    {
+      "id": "c06",
+      "query": "green valley apartments address",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "c07",
+      "query": "last date to sign up for the coding competition",
+      "kind": "paraphrase",
+      "hard": "jpeg",
+      "keyword": null,
+      "semantic": 2,
+      "hybrid": 5
+    },
+    {
+      "id": "c08",
+      "query": "login for the shared streaming account",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": null
+    },
+    {
+      "id": "c09",
+      "query": "carry warm jackets manali",
+      "kind": "exact",
+      "hard": "tall",
+      "keyword": 6,
+      "semantic": null,
+      "hybrid": 5
+    },
+    {
+      "id": "c10",
+      "query": "when do I see the doctor",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": null
+    },
+    {
+      "id": "e01",
+      "query": "internship offer letter stipend",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "e02",
+      "query": "cloudnest free trial ends",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "e03",
+      "query": "when are my final exams",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": 7
+    },
+    {
+      "id": "e04",
+      "query": "reset password link expires",
+      "kind": "exact",
+      "hard": "small",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "e05",
+      "query": "my flight to bangalore before new year",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "e06",
+      "query": "penalty for returning the OS textbook late",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 6,
+      "semantic": 2,
+      "hybrid": 2
+    },
+    {
+      "id": "e07",
+      "query": "byte bandits 2nd place codesprint",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "e08",
+      "query": "scholarship documents pending income certificate",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x10",
+      "query": "why we picked postgres over mongo",
+      "kind": "paraphrase",
+      "hard": "blur",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "k01",
+      "query": "train ticket december",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 2,
+      "hybrid": 1
+    },
+    {
+      "id": "k02",
+      "query": "pune to mumbai bus booking",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 2,
+      "semantic": 2,
+      "hybrid": 2
+    },
+    {
+      "id": "k03",
+      "query": "which gate for my flight to bengaluru",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 2,
+      "semantic": 3,
+      "hybrid": 2
+    },
+    {
+      "id": "k04",
+      "query": "added money to my metro card",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 3,
+      "semantic": 2,
+      "hybrid": 3
+    },
+    {
+      "id": "k05",
+      "query": "cab to airport terminal 2 otp",
+      "kind": "exact",
+      "hard": "lowc",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "k06",
+      "query": "snow crest cottage manali booking",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "k07",
+      "query": "movie tickets for saturday night",
+      "kind": "paraphrase",
+      "hard": "jpeg",
+      "keyword": 2,
+      "semantic": 2,
+      "hybrid": 2
+    },
+    {
+      "id": "k08",
+      "query": "parking slot 117",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 2,
+      "hybrid": 1
+    },
+    {
+      "id": "u01",
+      "query": "money I sent to riya",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 6,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "u02",
+      "query": "paid rent 9500",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 4,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "u03",
+      "query": "electricity bill payment didn't go through",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 5,
+      "semantic": 3,
+      "hybrid": 5
+    },
+    {
+      "id": "u04",
+      "query": "payquick received 5000 papa",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "u05",
+      "query": "airwave recharge 299",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "u06",
+      "query": "proof that I paid my college fees",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 2,
+      "semantic": 3,
+      "hybrid": 2
+    },
+    {
+      "id": "u07",
+      "query": "splitease how much I owe aman",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "o01",
+      "query": "when did my earphones arrive",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": 3
+    },
+    {
+      "id": "o02",
+      "query": "what did I order for dinner from the food app",
+      "kind": "paraphrase",
+      "hard": "blur",
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": null
+    },
+    {
+      "id": "o03",
+      "query": "return pickup running shoes refund",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "o04",
+      "query": "freshcart milk eggs bread",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "o05",
+      "query": "laptop monthly installment",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 5,
+      "semantic": 1,
+      "hybrid": 2
+    },
+    {
+      "id": "o06",
+      "query": "air conditioner warranty till 2028",
+      "kind": "exact",
+      "hard": "small",
+      "keyword": 1,
+      "semantic": 2,
+      "hybrid": 1
+    },
+    {
+      "id": "o07",
+      "query": "medicine order for fever and allergy",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 3,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "t01",
+      "query": "EADDRINUSE address already in use",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 2,
+      "hybrid": 1
+    },
+    {
+      "id": "t02",
+      "query": "git push rejected non-fast-forward",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "t03",
+      "query": "opencv import error in python",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "t04",
+      "query": "pip install failed because a c++ compiler is missing",
+      "kind": "paraphrase",
+      "hard": "lowc",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "t05",
+      "query": "cannot connect to the docker daemon",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "t06",
+      "query": "java crashed because a variable was null",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "t07",
+      "query": "ssh permission denied publickey",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "t08",
+      "query": "segmentation fault core dumped",
+      "kind": "exact",
+      "hard": "jpeg",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x06",
+      "query": "kubernetes pod keeps restarting",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 2,
+      "semantic": 1,
+      "hybrid": 2
+    },
+    {
+      "id": "d01",
+      "query": "binary search python",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "d02",
+      "query": "sql query for average marks per student",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "d03",
+      "query": "react fetch cancel when component unmounts",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 6,
+      "semantic": 1,
+      "hybrid": 2
+    },
+    {
+      "id": "d04",
+      "query": "shortest path code with a heap",
+      "kind": "paraphrase",
+      "hard": "small",
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": 6
+    },
+    {
+      "id": "d05",
+      "query": "database url jwt secret env",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x07",
+      "query": "email regex javascript",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "s01",
+      "query": "campus wifi ip address",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "s02",
+      "query": "screen size and zoom settings",
+      "kind": "paraphrase",
+      "hard": "blur",
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": 2
+    },
+    {
+      "id": "s03",
+      "query": "how much memory does my laptop have",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 7,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "s04",
+      "query": "bluetooth headphones battery",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "s05",
+      "query": "which apps can use my camera and mic",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "p01",
+      "query": "placement drive 14 companies",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 2,
+      "hybrid": 1
+    },
+    {
+      "id": "p02",
+      "query": "git stash -p tip",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "p03",
+      "query": "complaint about a late train",
+      "kind": "paraphrase",
+      "hard": "jpeg",
+      "keyword": 7,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "p04",
+      "query": "free hosting money for college kids",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 2,
+      "hybrid": 1
+    },
+    {
+      "id": "p05",
+      "query": "funny post about programs running without bugs",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": 5
+    },
+    {
+      "id": "p06",
+      "query": "lost black wallet library",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "n01",
+      "query": "shopping list for the kitchen",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": 2,
+      "hybrid": 5
+    },
+    {
+      "id": "n02",
+      "query": "study schedule for coding interviews",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": null,
+      "hybrid": null
+    },
+    {
+      "id": "n03",
+      "query": "gift ideas didi birthday",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "n04",
+      "query": "database oral exam prep",
+      "kind": "paraphrase",
+      "hard": "tall",
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": 6
+    },
+    {
+      "id": "n05",
+      "query": "router admin page 192.168.0.1",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "n06",
+      "query": "movies to watch list",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "a01",
+      "query": "meeting with my professor about the project in december",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "a02",
+      "query": "teeth checkup appointment",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 2,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "a03",
+      "query": "mock interview system design",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "a04",
+      "query": "mom's birthday dinner plan",
+      "kind": "paraphrase",
+      "hard": "lowc",
+      "keyword": 1,
+      "semantic": 2,
+      "hybrid": 1
+    },
+    {
+      "id": "a05",
+      "query": "sprint planning monday",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "m01",
+      "query": "payquick otp",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "m02",
+      "query": "bank message about money spent on the train booking",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": null,
+      "semantic": 1,
+      "hybrid": 3
+    },
+    {
+      "id": "m03",
+      "query": "address change request for my government id",
+      "kind": "paraphrase",
+      "hard": "small",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "m04",
+      "query": "power bill due date",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 2,
+      "semantic": 1,
+      "hybrid": 2
+    },
+    {
+      "id": "m05",
+      "query": "parcel out for delivery agent vikas",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x09",
+      "query": "is my train seat confirmed",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 5,
+      "semantic": 4,
+      "hybrid": 1
+    },
+    {
+      "id": "h01",
+      "query": "monthly budget november",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "h02",
+      "query": "attendance below 75%",
+      "kind": "exact",
+      "hard": "tall",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "h03",
+      "query": "who paid for what on the mountain trip",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 5,
+      "semantic": 2,
+      "hybrid": 2
+    },
+    {
+      "id": "h04",
+      "query": "where did I apply for internships",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 9,
+      "semantic": 2,
+      "hybrid": 2
+    },
+    {
+      "id": "h05",
+      "query": "gym log bench press",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "r01",
+      "query": "how to free a port that is busy",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 4,
+      "semantic": 1,
+      "hybrid": 2
+    },
+    {
+      "id": "r02",
+      "query": "placement eligibility cgpa backlogs",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "r03",
+      "query": "python -m venv activate",
+      "kind": "exact",
+      "hard": "tall",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "r04",
+      "query": "what time do I have to be back in the hostel",
+      "kind": "paraphrase",
+      "hard": "blur",
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "r05",
+      "query": "masala chai recipe",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x08",
+      "query": "college bus timings from sector 62",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x01",
+      "query": "my room for the end sem exam",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 4,
+      "hybrid": 2
+    },
+    {
+      "id": "x02",
+      "query": "sgpa 8.42 result",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x03",
+      "query": "noida fog aqi",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x04",
+      "query": "when does my gym plan end",
+      "kind": "paraphrase",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 1,
+      "hybrid": 1
+    },
+    {
+      "id": "x05",
+      "query": "cafe wifi password",
+      "kind": "exact",
+      "hard": null,
+      "keyword": 1,
+      "semantic": 2,
+      "hybrid": 1
+    }
+  ]
+}
