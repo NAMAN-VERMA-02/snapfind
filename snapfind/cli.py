@@ -9,7 +9,7 @@ from pathlib import Path
 
 from snapfind import __version__, db
 
-COMMANDS = {"index", "search", "watch", "forget", "reset"}
+COMMANDS = {"index", "search", "watch", "serve", "forget", "reset"}
 AUTO_UPDATE_LIMIT = 20  # before a search, OCR at most this many new screenshots
 
 
@@ -100,6 +100,13 @@ def cmd_watch(con, args) -> int:
         return 0
 
 
+def cmd_serve(con, args) -> int:
+    from snapfind import web
+
+    web.serve(con, args.port)
+    return 0
+
+
 def cmd_forget(con, args) -> int:
     target = str(Path(args.path).expanduser().resolve())
     rows = [p for (p,) in con.execute("SELECT path FROM images")
@@ -150,6 +157,10 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("paths", nargs="*")
     s.add_argument("--every", type=float, default=5.0, help="seconds between scans")
     s.set_defaults(fn=cmd_watch)
+
+    s = sub.add_parser("serve", help="local web UI on 127.0.0.1")
+    s.add_argument("--port", type=int, default=8765)
+    s.set_defaults(fn=cmd_serve)
 
     s = sub.add_parser("forget", help="remove a file or folder from the index and skip it")
     s.add_argument("path")
