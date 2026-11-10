@@ -107,6 +107,12 @@ What that means:
 
 The laptop run happened while several other heavy jobs had the CPU pinned and the disk nearly full, so its speed column is pessimistic. Both runs gave *identical* accuracy.
 
+**My real Screenshots folder** (2,013 PNGs, mostly 1080p desktop captures; only aggregate numbers are published, never their text):
+- First index: 9.7 hours, **0.058 images/s**, on the i3 laptop, overnight while other jobs also ran. Real desktop screenshots hold far more text than the eval screens, so expect a slow first run on a laptop. It goes newest first, so recent screenshots are searchable in seconds, and it can resume after Ctrl+C.
+- After that: running `snapfind index` with nothing new takes **about 1.5 s end to end** for all 2,013 files (Python startup, folder scan, database check), with 0 OCR runs.
+
+**Scale test** ([`eval/results_scale.json`](eval/results_scale.json)): the same 100 queries with those 2,013 real screenshots added as distractors, 2,213 images in all (11× more). Top-3: **keyword 68, semantic 82, hybrid 79**. Exact queries: keyword 46, semantic 47, hybrid **49** of 50. Paraphrase queries: keyword 22, semantic 35, hybrid 30 of 50. Search median: 7.9 ms. This is pessimistic: a real screenshot that genuinely matches a query (I have real train tickets too) counts as a miss.
+
 **Caveats.** The screenshots are rendered by a browser, so they're cleaner than real ones (no wallpapers, photos or overlapping windows). I wrote both the screens and the queries. 100 queries gives wide intervals, as shown above. Treat these as a sanity check, not a benchmark.
 
 **Reproduce:** `python eval/run.py` (about 200 OCR runs), or Actions → **Eval** → *Run workflow*.
